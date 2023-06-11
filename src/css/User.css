@@ -1,0 +1,111 @@
+.user-box{
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.user-box-empty{
+    flex-basis: 300px;
+    height: 0;
+    margin: 0 10px;
+}
+
+.user-box .user-image{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user-box img{
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+    
+}
+.user-box .user-credentials{
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.user-box .username{
+    font-size: 18px;
+    color: black;
+    
+}
+
+.user-box .email{
+    font-size: 14px;
+    color: rgb(85, 83, 83);
+}
+
+.user-box .icon-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: rgb(85, 83, 83);
+}
+
+.user-box .icon-container .icon-holder{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.user-box .icon-container .icon-holder .icon-text{
+    margin-left: 5px;
+    color: black;
+}
+
+.close-button{
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: red;
+    float: right;
+    cursor: pointer;
+
+}
+
+.close-button:hover{
+    background-color: red;
+    color: white;
+}
+.user-info{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.user-info img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 60px;
+}
+
+.user-info-username{
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.user-info-email{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+

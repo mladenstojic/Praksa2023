@@ -1,0 +1,34 @@
+.kontejner{
+    display: flex;
+    background: url(../images/backgroun3.jpg) no-repeat;
+    background-position: center;
+    background-size:cover ;
+}
+
+.err404{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    top:0;
+    left: 0;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    padding: 50px;
+    width: calc(100% - 90px);
+    transition: 0.4s;
+}
+
+nav:hover + .main{
+    width: calc(100% - 250px);
+    transition: 0.4s;
+}

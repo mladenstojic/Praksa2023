@@ -1,0 +1,435 @@
+.users{
+    display: flex;
+    width: 100%;
+}
+.users .card{
+    width: 25%;
+    margin: 15px;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+  
+  
+.users .card.type2{
+    width: 100%;
+    margin:10px 0 0;
+    min-width: 230px;
+    text-align: justify;
+    font-size: 14px;
+    background: white;
+    transition: 0.1s;
+}
+  
+.users .card.type2:hover{
+    transition: 0.1s;
+    background: gainsboro;
+    cursor:pointer;
+}
+  
+  
+  
+.users .card.type2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.users .card.type2 span{
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.card .type2 .prioritet, .task-det .prioritet{
+    width:auto;
+    border-radius: 30px;
+    height: 24px;
+    margin: 10px 0;
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+    font: 18px;
+    padding: 15px 10px;
+}
+
+.card .type2 .prioritet h5{
+    display: inline-block;
+    width: auto;
+}
+  
+.prioritet-text{
+    align-items:center;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+  
+.p-c1{
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
+  
+  
+.p-c2{
+    background-color: rgb(0, 255, 0);
+    font-weight: bold;
+    color: black;
+}
+  
+  
+.p-c3{
+    background-color: orange;
+    font-weight: bold;
+    color: black;
+}
+  
+  
+.p-c4{
+    background-color: orangered;
+    font-weight: bold;
+    color: white;
+}
+  
+  
+.p-c5{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+}
+
+.users .card .avatar{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;    
+}
+  
+.users .card h4{
+    text-transform: uppercase;
+
+}
+.users .card p{
+    font-size: 13px;
+    margin-bottom: 15px;
+    max-height: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-wrap:break-word;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.userResult-cont{
+    width: 100%;
+    max-height: 300px;
+    position: relative;
+    display: none;
+}
+
+.userResult-nosac{
+    height: auto;
+    max-height: 100px;
+    position: absolute;
+    background-color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.5);
+}
+
+.userResult-nosac::-webkit-scrollbar {
+    display: none;
+  }
+
+.userResult{
+    width: 100%;
+    padding: 4px; 
+    cursor: pointer;
+}
+.userResult:hover{
+    background-color: #eee;
+}
+
+.userbubble{
+    background-color: lightgray;
+    align-items: center;
+    padding: 0 10px;
+    margin: 3px;
+    border-radius: 20px;
+    display:inline-flex;
+    max-height: 25px;
+    width: auto;
+    vertical-align: bottom;
+}
+.oboj-zeleno{
+    background-color: green;
+    color: white;
+}
+
+.oboj-crveno{
+    background-color: red;
+    color: white;
+}
+
+.userbouble-a{
+    flex: 1;
+}
+#userInput:focus~ .userResult-cont,
+#userInput:not(:placeholder-shown)~ .userResult-cont{
+    display: block;
+}
+
+.xStyle:hover{
+    color: red;
+}
+.xStyle.green:hover{
+    color: green;
+}
+
+.projectDetails{
+    width: 400px;
+    color: white;
+    height: 85px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.opis-naslov{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.otvarac{
+    display:flex;
+    align-items:center;
+    width:100px;
+    padding: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.otvarac:hover{
+    color: lightgray!important;;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.otvori-opis{
+    width: 100%;
+    height: auto;
+}
+.projectDetails2{
+    width: 100%;
+    color: white!important;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectDetails h1{
+    height: 92px;
+    color: white!important;
+    
+}
+
+.projectDetails h4{
+    margin: 2px 0 2px 110px;
+}
+
+.projectDetails .opisProj{
+    text-align: justify;
+    font-size: 14px;
+    width: 100%;
+}
+
+.pola{
+    display: inline-block;
+    width: 50%;
+}
+
+.levi{
+    width: 40%;
+    min-width: 400px;
+}
+
+
+.open{
+   max-width: calc(100% - 130px);
+}
+.colapsed{
+    max-width: 250px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-wrap:break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.user-close-icon{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+
+
+.avatar-box{
+    height: 40px;
+    width: 120px;
+    float: right;
+    margin: 5px;
+}
+.avatar-group {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;  
+}
+    
+.avatar{
+    border: 2px solid white;
+    margin-left: -22px;
+    cursor: pointer;
+}
+.avatar:hover{
+    border: 2px solid lightgray;
+}
+
+.task-info-box{
+    width: 750px;
+    height: auto;
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.task-info-box .task-opis{
+    width: 500px;
+    height: auto;
+    padding: 15px;
+    min-height: 0;
+}
+
+.task-info-box .task-opis h1{
+    padding: 15px 15px;
+    text-align: start;
+}
+
+.task-info-box .task-opis p{
+    padding: 15px 15px;
+    text-align: justify;
+}
+
+.task-info-box .task-details{
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 0;
+    background-color: #eee;
+}
+.task-det{
+    width: 100%;
+    display: block;
+}
+
+.task-info-box .button-cont{
+    height: 90px;
+    width: 100%;
+    display: flex;
+
+}
+
+.task-info-box .button-cont .flex-levi{
+    width: 500px;
+    height: 100%;
+}
+
+.task-info-box .button-cont .flex-desni{
+    width: 250px;
+    height: 100%;
+    background-color: #eee;
+
+}
+
+.button-cont button{
+    display: flex;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    margin: 21px;
+    font-size: 16px;
+    min-width: 0;
+    cursor: pointer;
+    width: auto;
+    color: #3484af;
+}
+
+.button-cont button:hover{
+    background-color: #3484af;
+    color: white;
+}
+
+.button-cont .desni{
+    color: red;
+    float: right;
+}
+
+.button-cont .desni:hover{
+    background-color: red;
+    color: white;
+}
+
+
+.status-box{
+    padding: 5px;
+    min-width: 130px;
+    background-color: lightgray;
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.status-box:hover{
+    color: #3484af;
+}
+
+.status-box p{
+    display: inline-block;
+    width: auto;
+}
+
+.status-type{
+    background-color: white;
+    width: 130px;
+    position: absolute;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.status-selection{
+    cursor: pointer;
+    padding: 5px;
+}
+.status-selection:hover{
+    background-color: lightgray;
+}
+
+
+
